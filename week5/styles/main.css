@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#meeting {
+    background-color: rgb(35, 121, 150);
+    color: white;
+    font-size: .8em;
+    padding: 10px;
+    display:none;
+}
+.hide {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    color: #393548;
+    align-items: center;
+
+}
+.headings h1 {
+    width: 50%;
+    padding-left: 15px;
+    visibility: hidden;
+}
+#date {
+    color: white;
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 100px 100px 100px 100px 300px;  */
+    grid-gap: 10px;
+    margin: 50px;
+}
+
+.parts {
+    background-color: #e6dfd8;
+    grid-template-columns: 1fr;
+    /* border: 1px solid black; */
+    
+}
+    #weather {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #w-box {
+        display: flex;
+        justify-content: center;
+    }
+    #join {
+        display: none;
+    }
+    #join h3 {
+        background-color: rgb(35, 121, 150);
+        padding: 10px;
+        border-radius: 5px;
+        width: 70%;
+        margin: 15px auto;
+        color: white;
+    }
+    #join h3:hover {
+        color: black;
+        background-color: lightblue;
+    }
+    #join a {
+        text-decoration: none;
+    }
+    #hero {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0;
+        position: relative;
+    }
+    #ammon {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: -5px;
+    }
+    #welcome {
+        position: absolute;
+        top: 0;
+        left: 60px;
+    }
+    #news {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #spotlights {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #event {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .event_icon {
+        width: 20px;
+    }
+    .icon {
+        width: 50px;
+        padding: 10px;
+        /* margin: 0 auto;
+        display: block; */
+    }
+
+#spotlights {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#s1, #s2, #s3 {
+    border: 1px solid black;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+h1, h2 {
+    font-family: Marmelad, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+h3 {
+    font-family: Marmelad, Arial, Helvetica, sans-serif;
+    color:rgb(35, 121, 150);
+    font-size: 1.5em;
+}
+#tag {
+    text-align: center;
+
+}
+#logo {
+    width: 150px;
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+nav {
+    background-color:  rgb(35, 121, 150);
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 60px;
+    align-self:baseline;
+    width: 125px;
+    z-index: 1;
+}
+
+nav a {
+    padding: 15px;
+    display: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+}
+nav a:hover {
+    color: black;
+    background-color: lightblue;
+}
+nav a:first-child {
+    display: block;
+    text-align: center;
+    font-size: 2.5em;
+}
+.responsive a{
+    display: block;
+}
+/* for the 'X' on hamburger menu */
+.ham span:nth-child(1) {
+    display: block;
+}
+.ham span:nth-child(2) {
+    display: none;
+}
+.ham.responsive span:nth-child(1) {
+    display: none;
+}
+.ham.responsive span:nth-child(2) {
+    display: block;
+}
+.contentbox {
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: #ccc;
+    color: #444;
+    font-style: italic;
+}
+.parts h3, .parts h4, .parts p {
+    text-align: center;
+   
+}
+.parts p {
+    padding: 0 20px;
+}
+
+
+#top, #bottom, .date-box {
+    background-color:  rgb(35, 121, 150);
+}
+#top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+footer {
+    padding: 0;
+}
+footer h3, footer a{
+    color: white;
+}
+footer h3 {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+}
+footer p {
+    
+    color: white;
+    text-align: center;
+}
+#logo-footer {
+    width: 80px;
+    height: 80px;
+}
+.mail {
+    margin-top: 20px;
+}
+.mail a {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.map {
+    width: 30px;
+    display: block;
+    margin: 10px auto;
+}
+.date-box, #bottom {
+    padding: 5px;
+} 
+
+
