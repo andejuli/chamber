@@ -64,7 +64,7 @@ const parent = document.querySelector('#meeting');
 
 
 
-if (mydate.getDay() == 4 || mydate.getDay() == 5) {
+if (mydate.getDay() == 1 || mydate.getDay() == 2) {
     mainnav.style.top = '180px';
     parent.style.display = 'block';
 }
