@@ -265,4 +265,34 @@ footer p {
     padding: 5px;
 } 
 
+/* Discover CSS*/
+#days{
+    text-align: center;
+    color: white;
+    background-color: gray;
+    padding: 30px;
+}
+#dis_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 45px;
+}
+.gallery {
+    display: block;
+    margin: 0 auto;
+}
+figure {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
 
+figcaption {
+    display: none;
+    text-align: center;
+    padding: 5px;
+}
+img {
+    max-width: 400px;
+    width: 95%;
+}

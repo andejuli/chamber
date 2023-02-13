@@ -73,5 +73,15 @@
       #logo {
           margin: 0 15px;
       }
-      
+
+      /* Discovery CSS*/
+      #dis_main {   
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+    figure img:hover {
+        box-shadow: 0 0 15px #333;
+    }
+    figcaption {
+        display: block;
+    }
   }
