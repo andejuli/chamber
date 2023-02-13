@@ -107,3 +107,9 @@ console.log(chill);
 if (temp <= 50 && ws >= 3) {
     document.querySelector('.wc').textContent = chill;
 }
+
+
+/* storage local and session */
+
+localStorage.setItem('name', 'Julie Anderson - Permanent');
+sessionStorage.setItem('class', 'WDD230 - not permanent');
