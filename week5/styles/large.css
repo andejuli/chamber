@@ -87,5 +87,6 @@
     /*Join CSS*/
     #join_content{
         flex-direction: row;
+        margin-left: 80px;
     }
   }
