@@ -84,4 +84,8 @@
     figcaption {
         display: block;
     }
+    /*Join CSS*/
+    #join_content{
+        flex-direction: row;
+    }
   }

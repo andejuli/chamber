@@ -296,3 +296,59 @@ img {
     max-width: 400px;
     width: 95%;
 }
+
+/* Join CSS */
+#join_content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+form {
+    margin: 40px;
+}
+form input:required {
+    border-left: red solid 6px;
+}
+form input:required:valid {
+    border-left: green solid 6px;
+}
+label {
+    font-size: 25px;
+}
+label, input {display:block}
+input, textarea {
+    height: 44px; 
+}
+input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+textarea {
+    height: 100px;
+}
+input[type='radio']{ 
+    height: 20px; 
+}
+#member {padding-bottom: 20px;}
+span {
+    font-size: 20px;
+}
+#radio {
+    display: grid;
+    grid-template-columns: 60px 100px;
+}
+input[type='submit']{ 
+    height: 80px; 
+    width: 75%;
+    font-size: 25px;
+}
+#memberinfo {
+    margin: 40px 40px 40px 100px;
+    font-size: 20px;
+}
+#thanks {
+    text-align: center;
+    grid-column: 1/4;
+}
