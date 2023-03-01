@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home Page</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <div id="meeting"><h2>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2></div>
+    <header>
+        <nav class="navigation">
+            <a class="ham" href="#"><span>&#9776;</span><span>X</span></a>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="#">Contact</a>
+        </nav>
+        <img id="logo" src="images/logo.png" alt="chamber logo">
+        <section class="headings">
+                <h1>Ammon Chamber of Commerce</h1>
+        </section>
+
+    </header>
+    <h1>Join our Chamber</h1>
+    <main id="join_content">
+        <form method="get" action="thankyou.html">
+            <label for="fname">First Name *:</label>
+            <input id="fname" name="firstname" required>
+            <label for="lname">Last Name *:</label>
+            <input id="lname" name="lastname" required>
+            <label for="title">Business Position Title</label>
+            <input id="title" name="'biztitle" pattern="[A-Za-z -]+" minlength="7" required>
+            <label for="email">Email *:</label>
+            <input id="email" name="email" type="email" placeholder="name@domain.com" required>
+            <label for="phone">Cell Phone *:</label>
+            <input id="phone" name="phone" type="tel" placeholder="123-123-1234" required>
+            <label for="business">Business Name *:</label>
+            <input id="business" name="bizname" required>
+            <label for="member">Enter you Level of Membership</label>
+            <div id="radio">
+                <input id="member" id='one' type="radio" name="mlevel">
+                <label for="one">Level 1</label>
+                <input id="member" id='two' type="radio" name="mlevel">
+                <label for="two">Level 2</label>
+                <input id="member" id='three' type="radio" name="mlevel">
+                <label for="three">Level 3</label>
+                <input id="member" id='four' type="radio" name="mlevel">
+                <label for="four">Level 4</label>
+            </div>
+            <label for="message">Business Description:</label>
+            <textarea id="message"></textarea>
+            <input id='date'type="hidden" name="todaydate">
+            <input type="submit" value="Join the Chamber">
+        </form>
+        <div>
+            <h2>Membership Levels</h2>
+        </div>
+    </main>
+    <footer>
+        <div id='top'>
+            <img id="logo-footer" src="images/logo.png" alt="chamber logo">
+            <div>
+                <h3>Ammon Chamber of Commerce</h3><p>124 Street, Ammon, Id</p>
+                
+            </div>
+            <div class="mail" >
+                <p><a href="mailto:someone@example.com">info@ammoncoc.org</a></p>
+                <a target="_blank" href= 'https://goo.gl/maps/DHXtwUmDxbj1rLqD6'>&#128205;</a>
+            </div>
+        </div>
+        <div id='bottom'>
+            <p>&copy; Chamber Project | Julie Ann Anderson</p>
+            
+            
+        </div>
+    </footer>
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>

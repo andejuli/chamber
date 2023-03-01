@@ -89,4 +89,11 @@
         flex-direction: row;
         margin-left: 80px;
     }
+    /* Directory CSS */
+    .table tr{
+        border: none;
+      }
+    .table td {
+        display:table-cell;
+    }
   }
