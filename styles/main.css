@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#meeting {
+    background-color: rgb(35, 121, 150);
+    color: white;
+    font-size: .8em;
+    padding: 10px;
+    display:none;
+}
+.hide {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    color: #393548;
+    align-items: center;
+
+}
+.headings h1 {
+    width: 50%;
+    padding-left: 15px;
+    visibility: hidden;
+}
+#date {
+    color: white;
+    text-align: center;
+}
+#home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 100px 100px 100px 100px 300px;  */
+    grid-gap: 10px;
+    margin: 50px;
+    
+}
+
+.parts {
+    background-color: #e6dfd8;
+    grid-template-columns: 1fr;
+    /* border: 1px solid black; */
+    
+}
+    #weather {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #w-box {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .weather_img{
+        width: 75px;
+    }
+    #join {
+        display: none;
+    }
+    #join_content {
+        display: grid;
+    }
+    #join h3 {
+        background-color: rgb(35, 121, 150);
+        padding: 10px;
+        border-radius: 5px;
+        width: 70%;
+        margin: 15px auto;
+        color: white;
+    }
+    #join h3:hover {
+        color: black;
+        background-color: lightblue;
+    }
+    #join a {
+        text-decoration: none;
+    }
+    #hero {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0;
+        position: relative;
+    }
+    #ammon {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: -5px;
+    }
+    #welcome {
+        position: absolute;
+        top: 0;
+        left: 60px;
+    }
+    #news {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #spotlights {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #event {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .event_icon {
+        width: 20px;
+    }
+    #event h3, #weather h3, #join h3, #news h3 {
+        margin-top: 40px;
+    }
+    #event h4 {
+        margin: 50px 0;
+    }
+    .icon {
+        width: 50px;
+        padding: 10px;
+        margin: 0 auto;
+        display: block;
+    }
+
+#spotlights {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#s1, #s2, #s3 {
+    border: 1px solid black;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+h1, h2 {
+    font-family: Marmelad, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+h3 {
+    font-family: Marmelad, Arial, Helvetica, sans-serif;
+    color:rgb(35, 121, 150);
+    font-size: 1.5em;
+}
+#tag {
+    text-align: center;
+
+}
+#logo {
+    width: 150px;
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+nav {
+    background-color:  rgb(35, 121, 150);
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 60px;
+    align-self:baseline;
+    width: 125px;
+    z-index: 1;
+}
+
+nav a {
+    padding: 15px;
+    display: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+}
+nav a:hover {
+    color: black;
+    background-color: lightblue;
+}
+nav a:first-child {
+    display: block;
+    text-align: center;
+    font-size: 2.5em;
+}
+.responsive a{
+    display: block;
+}
+/* for the 'X' on hamburger menu */
+.ham span:nth-child(1) {
+    display: block;
+}
+.ham span:nth-child(2) {
+    display: none;
+}
+.ham.responsive span:nth-child(1) {
+    display: none;
+}
+.ham.responsive span:nth-child(2) {
+    display: block;
+}
+.contentbox {
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: #ccc;
+    color: #444;
+    font-style: italic;
+}
+.parts h3, .parts h4, .parts p {
+    text-align: center;
+}
+
+.parts p {
+    padding: 0 40px;
+}
+
+
+#top, #bottom, .date-box {
+    background-color:  rgb(35, 121, 150);
+}
+#top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+footer {
+    padding: 0;
+}
+footer h3, footer a{
+    color: white;
+}
+footer h3 {
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+}
+footer p {
+    
+    color: white;
+    text-align: center;
+}
+#logo-footer {
+    width: 80px;
+    height: 80px;
+}
+.mail {
+    margin-top: 20px;
+}
+.mail a {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.map {
+    width: 30px;
+    display: block;
+    margin: 10px auto;
+}
+.date-box, #bottom {
+    padding: 5px;
+} 
+
+/* Discover CSS*/
+#days{
+    text-align: center;
+    color: white;
+    background-color: gray;
+    padding: 30px;
+}
+#dis_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 45px;
+}
+.gallery {
+    display: block;
+    margin: 0 auto;
+}
+figure {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+figcaption {
+    display: none;
+    text-align: center;
+    padding: 5px;
+}
+img {
+    
+    width: 95%;
+}
+
+/* Join CSS */
+/* #join_content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+form {
+    margin: 40px;
+}
+form input:required {
+    border-left: red solid 6px;
+}
+form input:required:valid {
+    border-left: green solid 6px;
+}
+label {
+    font-size: 25px;
+}
+label, input {display:block}
+input, textarea {
+    height: 50px; 
+}
+input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+textarea {
+    height: 100px;
+}
+input[type='radio']{ 
+    height: 20px; 
+}
+#member {padding-bottom: 20px;}
+span {
+    font-size: 20px;
+}
+#radio {
+    display: grid;
+    grid-template-columns: 60px 100px;
+}
+input[type='submit']{ 
+    height: 80px; 
+    width: 75%;
+    font-size: 25px;
+    background-color:rgb(35, 121, 150);
+    color: white;
+    border-radius: 10px;
+}
+#memberinfo {
+    margin: 40px 40px 40px 100px;
+    font-size: 20px;
+}
+#join_title {
+    font-size: 3em;
+}
+#thanks {
+    text-align: center;
+    grid-column: 1/4;
+} */
+
+
+/* JOIN Page CSS */
+#join_content {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+label, input {
+    display: block;
+    font-size: 1.5em;
+}
+label {
+    margin: 20px 0 0 0;
+}
+input {
+    height: 50px;
+}
+input[type='radio']{
+    height: 20px;
+}
+form input:required {
+    border-left: red solid 6px;
+}
+form input:required:valid {
+    border-left: green solid 6px;
+}
+#radio {
+    display: grid;
+    grid-template-columns: 60px 100px;
+}
+#radio label, #radio input {
+    margin: 0;
+}
+
+textarea {
+    height: 150px;
+}
+input, textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+input[type='submit']{
+    height: 80px;
+    border-radius: 10px;
+    background-color:rgb(35,121,150);
+    color: white;
+}
+
+/* Directory Page CSS */
+
+.views {
+    width: 50px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#views_box {
+    text-align: center;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}
+.cards section {
+    border: 1px solid navy;
+    padding: 30px;
+    
+    width: 300px;
+    margin: 20px;
+}
+
+h2, h1 {
+    
+    text-align: center;
+}
+
+img {
+    width: 90%;
+    
+}
+table {
+    width: 75%;
+    margin: 50px auto;
+    font-size: 1.2em;
+}
+tr {
+    line-height: 2.5em;
+}
+td {
+    padding: 5px;
+    display: block;
+}
+tr:nth-of-type(even){
+    background-color: #ccc;
+}
+table a {
+    color: navy;
+}
