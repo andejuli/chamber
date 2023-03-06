@@ -20,3 +20,27 @@ h1, h2 {
     width: 90%;
     box-shadow: 5px 10px 8px 5px #888888;
 }
+
+#view {
+    text-align: center;
+    font-size: 3em;
+}
+
+#cards, #list {
+    border: 3px solid black;
+    padding: 0 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 3px #ccc;
+}
+table {
+    width: 75%;
+    margin: 50px auto;
+    font-size: 1.2em;
+}
+td {
+    padding: 5px;
+    display: block; /*media query use display: table-cell*/
+}
+tr:nth-of-type(even) {
+    background-color: #ccc;
+}

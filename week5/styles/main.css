@@ -293,7 +293,7 @@ figcaption {
     padding: 5px;
 }
 img {
-    max-width: 400px;
+    
     width: 95%;
 }
 
@@ -433,7 +433,7 @@ input[type='submit']{
 }
 
 h2, h1 {
-    color: navy;
+    
     text-align: center;
 }
 
