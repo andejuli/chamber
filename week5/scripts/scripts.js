@@ -59,15 +59,7 @@ const dateoutput = document.querySelector('#date');
 dateoutput.textContent = weekname + ", " + mydate.getDate() + " " + monthname + " " + mydate.getFullYear();
 
 
-//to show mon tues announcement message
-const parent = document.querySelector('#meeting');
 
-
-
-if (mydate.getDay() == 1 || mydate.getDay() == 2) {
-    mainnav.style.top = '180px';
-    parent.style.display = 'block';
-}
 
 // const joinbtn = document.querySelector('.join');
 // const announcement = document.querySelector('#a');
