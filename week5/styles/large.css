@@ -86,8 +86,10 @@
     }
     /*Join CSS*/
     #join_content{
+        display: flex;
         flex-direction: row;
         margin-left: 80px;
+        justify-content: space-around;
     }
     /* Directory CSS */
     .table tr{

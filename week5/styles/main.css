@@ -59,6 +59,9 @@ header {
     #join {
         display: none;
     }
+    #join_content {
+        display: grid;
+    }
     #join h3 {
         background-color: rgb(35, 121, 150);
         padding: 10px;
@@ -362,7 +365,7 @@ input[type='submit']{
 
 /* JOIN Page CSS */
 #join_content {
-    display: flex;
+    display: block;
     width: 90%;
     margin: 0 auto;
 }
